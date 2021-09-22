@@ -15,7 +15,11 @@ a{
 	margin: 0 auto;
 	/* margin-inline: auto; */
 }
+img{
+	max-width: 100%;
+	display: block;
 
+}
 /* Header y Navegación */
 .nombre-sitio{
 	margin-top:50px;
@@ -30,10 +34,32 @@ a{
 }
 .nav-principal{
 	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
 }
 .hero{
 	background-image: url(../img/principal.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height:550px;
+}
+/* Categorias */
+.categorias h2{
+	text-align: center;
+}
+.categoria a{
+	display: block;
+	text-align: center;
+	padding:20px;
+	font-size: 20px;
+}
+.categoria a:hover{
+	background-color: #037bc0;
+	color: #fff;
+	border-radius: 0 0  10px 10px;
+}
+.listado-categorias{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap:20px;
 }
