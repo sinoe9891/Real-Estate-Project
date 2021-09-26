@@ -37,6 +37,10 @@ img{
 	max-width: 100%;
 	display: block;
 }
+/* Utlidades */
+.text-center{
+	text-align:center;
+}
 /* Header y Navegación */
 .nombre-sitio{
 	margin-top:5rem;
@@ -108,4 +112,39 @@ img{
 	flex-basis: 50%;
 	padding-left: 10rem;
 	color: #fff;
+}
+
+/* Listado de productos */
+.contenido-principal{
+	padding-top:5rem;
+}
+.producto{
+	background-color: #037bc0;
+}
+.texto-producto{
+	text-align: center;
+	color: #fff;
+	padding:2rem;
+}
+.texto-producto  .precio{
+	font-size: 2.8rem;
+	font-weight: 900;
+}
+.texto-producto h3{
+	margin: 0;
+}
+.texto-producto p{
+	margin: 0 0 0.5rem 0;
+}
+.texto-producto a{
+	background-color: #8cbc00;
+	color: #fff;
+	display:block;
+	text-transform: uppercase;
+	font-weight: 900;
+	padding: 1rem;
+	transition: background-color 0.2s ease-out;
+}
+.texto-producto a:hover{
+	background-color: #769602;
 }
