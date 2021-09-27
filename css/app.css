@@ -240,3 +240,17 @@ img {
 	text-align: center;
 	margin-top: 5rem;
 }
+
+/* Nosotros */
+.contenido-nosotros{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	/* Condicional de tamaños al llegar a 250px */
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	column-gap: 4rem;
+}
+.informacion-nosotros{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
