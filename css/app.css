@@ -20,31 +20,31 @@ h4,
 h5,
 h6 {
     font-family: "Playfair Display", serif;
-    margin: 0 0 5rem 0;
+    margin: 0 0 2rem 0;
 }
 h1 {
     font-size: 4rem;
 }
-@media (min-width: 768px) { 
-	h1 {
-		font-size:5rem;
-	}
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
 }
 h2 {
-	font-size: 3.2rem;
+    font-size: 3.2rem;
 }
-@media (min-width: 768px) { 
-	h2 {
-		font-size:4rem;
-	}
+@media (min-width: 768px) {
+    h2 {
+        font-size: 4rem;
+    }
 }
 h3 {
-	font-size: 2.4rem;
+    font-size: 2.4rem;
 }
-@media (min-width: 768px) { 
-	h2 {
-		font-size:3rem;
-	}
+@media (min-width: 768px) {
+    h2 {
+        font-size: 3rem;
+    }
 }
 a {
     text-decoration: none;
@@ -68,14 +68,14 @@ img {
     font-weight: 900;
     padding: 1rem;
     transition: background-color 0.2s ease-out;
-	border: none;
+    border: none;
 }
 .btn:hover {
     background-color: #769602;
-	cursor: pointer;
+    cursor: pointer;
 }
-.btn:active{
-	transform:scale(0.95);
+.btn:active {
+    transform: scale(0.95);
 }
 /* Utlidades */
 .text-center {
@@ -98,14 +98,14 @@ img {
 .nav-principal {
     padding: 2rem 0;
     display: flex;
-	flex-direction: column;
-	align-items: center;
+    flex-direction: column;
+    align-items: center;
 }
-@media (min-width: 768px) { 
-	.nav-principal{
-		justify-content: space-between;
-		flex-direction: row;
-	}
+@media (min-width: 768px) {
+    .nav-principal {
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
 
 .hero {
@@ -113,16 +113,27 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-	height:25rem;
+    height: 25rem;
 }
-@media (min-width: 768px) { 
-	.hero{
-		height: 55rem;
-	}
+@media (min-width: 768px) {
+    .hero {
+        height: 55rem;
+    }
 }
 /* Categorias */
 .categorias {
-    padding-top: 5rem;
+    padding: 5rem 0;
+}
+.categoria {
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .categoria {
+        margin-bottom: 0rem;
+    }
+}
+.categoria img {
+    width: 100%;
 }
 .categorias h2 {
     text-align: center;
@@ -138,45 +149,66 @@ img {
     color: #fff;
     border-radius: 0 0 1rem 1rem;
 }
-.listado-categorias {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+
+@media (min-width: 768px) {
+    .listado-categorias {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }
 /* Nosotros */
 .sobre-nosotros {
     margin-top: 5rem;
     background-image: linear-gradient(
-            to right,
+            to bottom,
             transparent 50%,
             #037bc0 50%,
             #037bc0 100%
         ),
         url(../img/nosotros.jpg);
+    background-position: center, top left;
     background-repeat: no-repeat;
-    background-size: 100%, 120rem; /* 100% de gradiente y 120 de img */
-    background-position: left center;
-    padding: 10rem 0;
+    background-size: 100%, 70rem; /* 100% de gradiente y 120 de img */
 }
+
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        margin-top: 5rem;
+        background-image: linear-gradient(
+                to right,
+                transparent 50%,
+                #037bc0 50%,
+                #037bc0 100%
+            ),
+            url(../img/nosotros.jpg);
+        background-position: left center;
+        padding: 10rem 0;
+        background-size: 100%, 160rem; /* 100% de gradiente y 120 de img */
+    }
+}
+
 .sobre-nosotros-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 8rem;
+    grid-template-rows: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+    .sobre-nosotros-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: unset;
+        column-gap: 10rem;
+    }
 }
 .texto-nosotros {
-    grid-column: 2 / 3; /*se va posiciona de la línea 2 a la 3*/
-}
-
-.sobre-nosotros-grid {
-    display: flex;
-    justify-content: flex-end;
-}
-.texto-nosotros {
-    flex-basis: 50%;
-    padding-left: 10rem;
+    grid-row: 2 / 3;
     color: #fff;
+    padding: 5rem;
 }
-
+@media (min-width: 768px) {
+    .texto-nosotros {
+        grid-column: 2 / 3;
+    }
+}
 /* Listado de productos */
 .contenido-principal {
     padding-top: 5rem;
